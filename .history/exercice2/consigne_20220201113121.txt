@@ -1,1 +1,0 @@
-Instead of displaying Hello Vue, display the current time like this: The current time is 09:42 (if the hour is 09:42). Don't worry if the time is not dynamically updating.
