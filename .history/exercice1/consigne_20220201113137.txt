@@ -1,0 +1,1 @@
+Instead of displaying Hello Vue, display Hola Ironhack just by changing the index.js file.
