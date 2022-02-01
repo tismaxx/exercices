@@ -1,6 +1,13 @@
 new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue'
+    message: 'The current time is '
+  },
+  methods:{
+      getTime(){
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+        return time; 
+      }
   }
 })

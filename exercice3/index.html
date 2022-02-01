@@ -13,19 +13,19 @@
     <div id="app">
         <ul>
             <!-- Replace ... with the name of the company in the instance's data -->
-            <li>The best company in the world is ...</li>
+            <li>The best company in the world is {{company}}</li>
             <!-- Replace ... with x multiplied by y using x and y from the instance's data -->
-            <li>x * y is ...</li>
+            <li>x * y is  {{ this.multiply(x,y) }}</li>
             <!-- Replace ... with the result of 2 * x using x from the instance's data and multiplyBy2 from the instance's methods -->
-            <li>x multiplied by 2 is ...</li>
+            <li>x multiplied by 2 is {{ this.multiplyBy2(x) }}</li>
             <!-- Write a method multiplyBy3 and use it to display 3 * y using y from the instance's data -->
-            <li>y multiplied by 3 is ...</li>
+            <li>y multiplied by 3 is {{ this.multiplyBy3(y) }}</li>
             <!-- Replace ... with a capitalized sentence1 using the filter capitalize and the data sentence1 -->
-            <li>...</li>
+            <li>{{ sentence1 | capitalize }}</li>
             <!-- Write a filter called reverse that will reverse a string and use it to display a reversed sentence2 -->
-            <li>...</li>
+            <li>{{ sentence2 | reverse }}</li>
             <!-- Use both filters to capitalize and reverse sentence3 from the instance's data -->
-            <li>...</li>
+            <li>{{ sentence3 | reverse | capitalize }}</li>
         </ul>
     </div>
 
